@@ -12,13 +12,13 @@
 <meta property="og:description" content="Brick oven pizza and family recipes on Columbia St. Order pickup or delivery.">
 <meta property="og:image" content="images/og.jpg">
 <meta property="og:type" content="restaurant">
+<meta name="theme-color" content="#1B1512">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;700&display=swap">
 <link rel="preload" as="image" href="images/hero-cheese-pie.webp" imagesrcset="images/hero-cheese-pie-sm.webp 480w, images/hero-cheese-pie.webp 960w" imagesizes="(min-width: 900px) 44vw, 92vw" fetchpriority="high">
-<link rel="stylesheet" href="assets/site.css?v=1">
-<noscript><style>.msec[data-collapsed]{display:block}</style></noscript>
+<link rel="stylesheet" href="assets/site.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -54,7 +54,7 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<div class="demo-bar" role="note">Demo built for Bella Mae's by Kobrossi Systems. Not live. Prices and hours to be confirmed with the owner.</div>
+<div class="demo-bar" role="note">Demo built for Bella Mae's by Kobrossi Systems. Not live. Prices, hours and yellow-tagged details to be confirmed with the owner.</div>
 
 <header class="top">
   <div class="wrap top-in">
@@ -64,10 +64,11 @@
     </a>
     <nav aria-label="Main">
       <ul class="nav">
+        <li><a href="#tonight">Tonight</a></li>
+        <li><a href="#regulars">Favorites</a></li>
         <li><a href="#menu">Menu</a></li>
-        <li><a href="#specials">Specials</a></li>
-        <li><a href="#catering">Catering</a></li>
-        <li><a href="#visit">Visit</a></li>
+        <li><a href="#trays">Trays</a></li>
+        <li><a href="#visit">Hours</a></li>
       </ul>
     </nav>
     <a class="btn btn-sm btn-ghost call-top" href="tel:+15184519474">(518) 451-9474</a>
@@ -78,16 +79,22 @@
   <section class="hero" id="top">
     <div class="wrap hero-in">
       <div class="hero-copy">
-        <p class="status" id="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><span class="status-text">Open daily. See hours below.</span></p>
-        <h1>Brick oven pizza, made to order on Columbia Street.</h1>
-        <p class="lede">Whole pies, grinders, wings and Gram Galafaro's family recipes. Pickup or delivery in Rensselaer.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="https://www.bellamaesmenu.com/" rel="noopener">Order online</a>
-          <a class="btn btn-dark" href="tel:+15184519474">Call (518) 451-9474</a>
-        </div>
-        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Bella+Mae%27s+Brick+Oven+150+Columbia+St+Rensselaer+NY" rel="noopener">
-          150 Columbia St, Rensselaer, NY 12144 <span aria-hidden="true">&rarr;</span> <span class="u">Directions</span>
+        <p class="status" id="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><span class="status-text">See today's hours below</span></p>
+        <h1>Gram's recipes. Brick oven. <em>Made when you order.</em></h1>
+        <p class="lede">A family pizza shop on Columbia Street, named for the owner's daughter. Whole pies, grinders and Gram Galafaro's dinners, for pickup or delivery.</p>
+        <a class="order-big" href="https://www.bellamaesmenu.com/" rel="noopener">
+          <strong>Order pickup or delivery</strong>
+          <span>Order direct. It's the way we prefer.</span>
         </a>
+        <div class="cta">
+          <a class="btn btn-line" href="tel:+15184519474">Call</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Bella+Mae%27s+Brick+Oven+150+Columbia+St+Rensselaer+NY" rel="noopener">Directions</a>
+        </div>
+        <ul class="proof" aria-label="Quick facts">
+          <li><b>4.7&#9733;</b><span>1,209 ratings on our order page</span></li>
+          <li><b>$12</b><span>cheese pie, any day</span></li>
+          <li><b>5</b><span>weeknight dinners, $12 to $14</span></li>
+        </ul>
       </div>
       <figure class="hero-pic">
         <img src="images/hero-cheese-pie.webp" srcset="images/hero-cheese-pie-sm.webp 480w, images/hero-cheese-pie.webp 960w" sizes="(min-width: 900px) 44vw, 92vw" width="960" height="1200" alt="A whole cheese pie from Bella Mae's, golden crust, in the box" fetchpriority="high">
@@ -97,69 +104,127 @@
     </div>
   </section>
 
-  <section class="specials" id="specials" aria-labelledby="sp-h">
+  <section class="band tonight" id="tonight" aria-labelledby="tn-h">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Every weekday</p>
-        <h2 id="sp-h">Tonight's dinner, already planned.</h2>
+      <div class="tonight-card" id="tonight-card">
+        <div>
+          <p class="eyebrow" id="tn-h">Tonight's dinner special</p>
+          <p class="dish" id="tn-dish">Chicken Marsala</p>
+          <p class="with" id="tn-with">Monday. With pasta and bread.</p>
+        </div>
+        <p class="tp" id="tn-price">$13</p>
+        <a class="btn" href="https://www.bellamaesmenu.com/" rel="noopener">Order tonight's special</a>
       </div>
-      <ol class="week" id="week">
-        <li data-day="1"><span class="d">Mon</span><span class="n">Chicken Marsala</span><span class="x">with pasta and bread</span><span class="p">$13</span></li>
-        <li data-day="2"><span class="d">Tue</span><span class="n">Chicken Parmesan</span><span class="x">with pasta and bread</span><span class="p">$13</span></li>
-        <li data-day="3"><span class="d">Wed</span><span class="n">Lasagna</span><span class="x">with bread</span><span class="p">$13</span></li>
-        <li data-day="4"><span class="d">Thu</span><span class="n">Stuffed Peppers</span><span class="x">beans, rice and cabbage</span><span class="p">$12</span></li>
-        <li data-day="5"><span class="d">Fri</span><span class="n">Linguine and Clams</span><span class="x">red or white, with bread</span><span class="p">$14</span></li>
+      <ol class="week" id="week" aria-label="Weeknight specials">
+        <li data-day="1"><span class="d">Mon</span><span class="n">Chicken Marsala</span><span class="p">$13 &middot; pasta, bread</span></li>
+        <li data-day="2"><span class="d">Tue</span><span class="n">Chicken Parmesan</span><span class="p">$13 &middot; pasta, bread</span></li>
+        <li data-day="3"><span class="d">Wed</span><span class="n">Lasagna</span><span class="p">$13 &middot; bread</span></li>
+        <li data-day="4"><span class="d">Thu</span><span class="n">Stuffed Peppers</span><span class="p">$12 &middot; beans, rice, cabbage</span></li>
+        <li data-day="5"><span class="d">Fri</span><span class="n">Linguine and Clams</span><span class="p">$14 &middot; red or white, bread</span></li>
       </ol>
     </div>
   </section>
 
-  <section class="favs" aria-labelledby="fav-h">
+  <section class="band" id="why" aria-labelledby="why-h">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">Start here</p>
-        <h2 id="fav-h">What to order first.</h2>
+        <p class="eyebrow">Not your chain pizza</p>
+        <h2 id="why-h">What makes it Bella Mae's.</h2>
       </div>
-      <div class="cards">
-        <article class="card">
-          <img src="images/garlic-knots.webp" width="720" height="540" loading="lazy" alt="Garlic knots dusted with parmesan">
-          <span class="demo">Stock photo</span>
-          <div class="card-b"><h3>Garlic Knots</h3><p>The add-on nobody regrets.</p><span class="price">$8</span></div>
+      <div class="why-grid">
+        <article class="why">
+          <span class="big">Gram's</span>
+          <h3>Family recipes</h3>
+          <p>Chicken parm, eggplant parm, meatballs and pasta, the way Gram Galafaro made them.</p>
         </article>
-        <article class="card">
-          <img src="images/lasagna.webp" width="720" height="540" loading="lazy" alt="A square of baked meat lasagna">
-          <span class="demo">Stock photo</span>
-          <div class="card-b"><h3>Gram Galafaro's Recipes</h3><p>Chicken parm, eggplant parm, meatballs. Garlic bread and pasta included.</p><span class="price">from $14</span></div>
+        <article class="why">
+          <span class="big">Baked</span>
+          <h3>Eggplant, never fried <span class="confirm">confirm</span></h3>
+          <p>On the pies and the grinders. Lighter, and you can taste the eggplant.</p>
         </article>
-        <article class="card">
-          <img src="images/wings.webp" width="720" height="540" loading="lazy" alt="A bowl of saucy buffalo wings">
-          <span class="demo">Stock photo</span>
-          <div class="card-b"><h3>Deal #1</h3><p>12 cut square pie, 12 boneless wings and a 2-liter.</p><span class="price">$28</span></div>
+        <article class="why">
+          <span class="big">Beef + pork</span>
+          <h3>House meatballs <span class="confirm">confirm</span></h3>
+          <p>In the grinders, on the pies and on the side.</p>
+        </article>
+        <article class="why">
+          <span class="big">Whole pies</span>
+          <h3>Made to order <span class="confirm">confirm</span></h3>
+          <p>No slices sitting under a lamp. Your pie goes in the oven when you order it.</p>
         </article>
       </div>
+      <div class="story">
+        <span class="mark" aria-hidden="true">&ldquo;</span>
+        <p>The shop is named for the owner's daughter. Sandwiches are named for the regulars. It's that kind of place.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band regs" id="regulars" aria-labelledby="reg-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">First time? Start here</p>
+        <h2 id="reg-h">What regulars order.</h2>
+      </div>
+      <ol class="reg-grid">
+        <li class="reg">
+          <div class="type" aria-hidden="true">Naples</div>
+          <div class="reg-b">
+            <div class="row"><h3>Galafaro Naples</h3><span class="price">$15</span></div>
+            <p>The family's own pie. Simmered crushed tomatoes, hand-torn basil, olive oil, mozzarella.</p>
+          </div>
+        </li>
+        <li class="reg">
+          <div class="type" aria-hidden="true">Hot</div>
+          <div class="reg-b">
+            <div class="row"><h3>Meatball Grinder</h3><span class="price">$13</span></div>
+            <q>Their hot meatball sub was phenomenal.</q>
+            <span class="who">Customer review, Restaurantji</span>
+          </div>
+        </li>
+        <li class="reg">
+          <figure><img src="images/wings.webp" width="720" height="540" loading="eager" decoding="async" alt="A bowl of saucy wings"><span class="demo">Stock photo</span></figure>
+          <div class="reg-b">
+            <div class="row"><h3>Deal #1</h3><span class="price">$28</span></div>
+            <p>Square pie, 12 boneless wings, a 2-liter.</p>
+            <q>I had Pizza, Garlic Knots &amp; Boneless Wings and they were Delicious.</q>
+            <span class="who">Customer review, Restaurantji</span>
+          </div>
+        </li>
+        <li class="reg">
+          <div class="type" aria-hidden="true">Mon</div>
+          <div class="reg-b">
+            <div class="row"><h3>Monday Marsala</h3><span class="price">$13</span></div>
+            <p>Chicken Marsala with pasta and garlic bread, every Monday.</p>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
 
   <section class="menu" id="menu" aria-labelledby="menu-h">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">The full menu</p>
-        <h2 id="menu-h">Menu</h2>
-        <p class="sec-note">Prices from Bella Mae's online ordering page, October 2026. Ordering online shows today's price.</p>
+        <p class="eyebrow">Everything</p>
+        <h2 id="menu-h">The full menu.</h2>
+        <p class="sec-note">Tap a section to jump. Prices from Bella Mae's ordering page, October 2026. Ordering online always shows today's price.</p>
       </div>
+      <div class="msecs-wrap">
 <!--MENU-START-->
-<div class="chips" role="tablist" aria-label="Menu sections">
-<button class="chip" role="tab" id="tab-pizza" aria-controls="m-pizza" aria-selected="true" data-key="pizza">Pizza</button>
-<button class="chip" role="tab" id="tab-deals" aria-controls="m-deals" aria-selected="false" data-key="deals">All Day Deals</button>
-<button class="chip" role="tab" id="tab-gram" aria-controls="m-gram" aria-selected="false" data-key="gram">Gram Galafaro&#x27;s Recipes</button>
-<button class="chip" role="tab" id="tab-apps" aria-controls="m-apps" aria-selected="false" data-key="apps">Appetizers</button>
-<button class="chip" role="tab" id="tab-wings" aria-controls="m-wings" aria-selected="false" data-key="wings">Wings</button>
-<button class="chip" role="tab" id="tab-grinders" aria-controls="m-grinders" aria-selected="false" data-key="grinders">Grinders</button>
-<button class="chip" role="tab" id="tab-sandwiches" aria-controls="m-sandwiches" aria-selected="false" data-key="sandwiches">House Sandwiches</button>
-<button class="chip" role="tab" id="tab-salads" aria-controls="m-salads" aria-selected="false" data-key="salads">Salads</button>
-<button class="chip" role="tab" id="tab-more" aria-controls="m-more" aria-selected="false" data-key="more">Calzones, Bread and Sweets</button>
-</div>
-<section class="msec" id="m-pizza" role="tabpanel" aria-labelledby="tab-pizza">
-<h3>Pizza</h3>
+<nav class="chips" aria-label="Menu sections"><div class="chips-in">
+<a class="chip" href="#m-pizza" data-key="pizza" aria-current="true">Pizza</a>
+<a class="chip" href="#m-deals" data-key="deals">All Day Deals</a>
+<a class="chip" href="#m-gram" data-key="gram">Gram Galafaro&#x27;s Recipes</a>
+<a class="chip" href="#m-apps" data-key="apps">Appetizers</a>
+<a class="chip" href="#m-wings" data-key="wings">Wings</a>
+<a class="chip" href="#m-grinders" data-key="grinders">Grinders</a>
+<a class="chip" href="#m-sandwiches" data-key="sandwiches">House Sandwiches</a>
+<a class="chip" href="#m-salads" data-key="salads">Salads</a>
+<a class="chip" href="#m-more" data-key="more">Calzones, Bread and Sweets</a>
+</div></nav>
+<div class="msecs">
+<section class="msec" id="m-pizza" aria-labelledby="h-pizza">
+<h3 id="h-pizza">Pizza</h3>
 <p class="msec-note">Whole pies from the brick oven. Every gourmet pie is $15.</p>
 <ul class="items">
 <li><span class="iname">Cheese Pizza</span><span class="price">$12</span></li>
@@ -179,8 +244,8 @@
 <li><span class="iname">The Chef</span><span class="price">$15</span><span class="desc">Jalapenos, anchovies, onions and olive oil.</span></li>
 <li><span class="iname">Vegetarian</span><span class="price">$15</span><span class="desc">Roasted vegetables, rosemary, sun-dried tomatoes, feta and mozzarella.</span></li>
 </ul></section>
-<section class="msec" id="m-deals" role="tabpanel" aria-labelledby="tab-deals" data-collapsed>
-<h3>All Day Deals</h3>
+<section class="msec" id="m-deals" aria-labelledby="h-deals">
+<h3 id="h-deals">All Day Deals</h3>
 <p class="msec-note">Any day, any hour.</p>
 <ul class="items">
 <li><span class="iname">#1 Square Pie, Wings and Soda</span><span class="price">$28</span><span class="desc">12 cut square pizza, 12 boneless wings and a 2-liter soda.</span></li>
@@ -188,8 +253,8 @@
 <li><span class="iname">#2 Pie + Antipasto</span><span class="price">$26</span><span class="desc">12 cut pizza and an antipasto salad.</span></li>
 <li><span class="iname">#4 Carbonara</span><span class="price">$21</span><span class="desc">Carbonara with garlic bread.</span></li>
 </ul></section>
-<section class="msec" id="m-gram" role="tabpanel" aria-labelledby="tab-gram" data-collapsed>
-<h3>Gram Galafaro&#x27;s Recipes</h3>
+<section class="msec" id="m-gram" aria-labelledby="h-gram">
+<h3 id="h-gram">Gram Galafaro&#x27;s Recipes</h3>
 <p class="msec-note">Comes with garlic bread and pasta. Pre-order welcome.</p>
 <ul class="items">
 <li><span class="iname">Chicken Parmesan</span><span class="price">$17</span></li>
@@ -198,8 +263,8 @@
 <li><span class="iname">Spaghetti and Meatballs</span><span class="price">$14</span></li>
 <li><span class="iname">Pasta with Bolognese Sauce</span><span class="price">$14</span></li>
 </ul></section>
-<section class="msec" id="m-apps" role="tabpanel" aria-labelledby="tab-apps" data-collapsed>
-<h3>Appetizers</h3>
+<section class="msec" id="m-apps" aria-labelledby="h-apps">
+<h3 id="h-apps">Appetizers</h3>
 <ul class="items">
 <li><span class="iname">Sampler Platter</span><span class="price">$18</span><span class="desc">3 each: tenders, mozzarella sticks, poppers and mac and cheese bites.</span></li>
 <li><span class="iname">Garlic Knots</span><span class="price">$8</span></li>
@@ -211,15 +276,15 @@
 <li><span class="iname">Potato Wedges</span><span class="price">$7</span><span class="desc">Plain $7, with cheese $8, with bacon $9.50.</span></li>
 <li><span class="iname">Garlic Bread</span><span class="price">$5</span><span class="desc">With cheese $7.</span></li>
 </ul></section>
-<section class="msec" id="m-wings" role="tabpanel" aria-labelledby="tab-wings" data-collapsed>
-<h3>Wings</h3>
+<section class="msec" id="m-wings" aria-labelledby="h-wings">
+<h3 id="h-wings">Wings</h3>
 <ul class="items">
 <li><span class="iname">Bone-In Wings</span><span class="price">$14</span></li>
 <li><span class="iname">Boneless Wings</span><span class="price">$12</span></li>
 <li><span class="iname">Steve Wicks&#x27;s Chicken Basket</span><span class="price">$16</span><span class="desc">1 lb boneless with potato wedges.</span></li>
 </ul></section>
-<section class="msec" id="m-grinders" role="tabpanel" aria-labelledby="tab-grinders" data-collapsed>
-<h3>Grinders</h3>
+<section class="msec" id="m-grinders" aria-labelledby="h-grinders">
+<h3 id="h-grinders">Grinders</h3>
 <p class="msec-note">With lettuce, tomato and onions.</p>
 <ul class="items">
 <li><span class="iname">Chicken Parm</span><span class="price">$14</span></li>
@@ -233,8 +298,8 @@
 <li><span class="iname">American Mix</span><span class="price">$15</span></li>
 <li><span class="iname">Cheesesteak</span><span class="price">$15</span></li>
 </ul></section>
-<section class="msec" id="m-sandwiches" role="tabpanel" aria-labelledby="tab-sandwiches" data-collapsed>
-<h3>House Sandwiches</h3>
+<section class="msec" id="m-sandwiches" aria-labelledby="h-sandwiches">
+<h3 id="h-sandwiches">House Sandwiches</h3>
 <p class="msec-note">Named for the regulars.</p>
 <ul class="items">
 <li><span class="iname">The Freddy</span><span class="price">$13</span><span class="desc">Chicken cutlet, fresh mozzarella, roasted red peppers and balsamic.</span></li>
@@ -243,8 +308,8 @@
 <li><span class="iname">Stormin&#x27; Norman</span><span class="price">$13</span><span class="desc">Roast beef, Swiss, red onions, mayo, on rye.</span></li>
 <li><span class="iname">Turkey Head</span><span class="price">$12</span><span class="desc">Turkey, provolone, roasted peppers, red onions, mayo, oil and vinegar.</span></li>
 </ul></section>
-<section class="msec" id="m-salads" role="tabpanel" aria-labelledby="tab-salads" data-collapsed>
-<h3>Salads</h3>
+<section class="msec" id="m-salads" aria-labelledby="h-salads">
+<h3 id="h-salads">Salads</h3>
 <p class="msec-note">Homemade ranch or blue cheese, balsamic, Italian or Russian.</p>
 <ul class="items">
 <li><span class="iname">Grilled Antipasto</span><span class="price">$17</span><span class="desc">Smoked meats and cheeses, roasted vegetables.</span></li>
@@ -253,8 +318,8 @@
 <li><span class="iname">Caesar</span><span class="price">$10</span><span class="desc">Romaine, parmesan, olives, croutons. Add chicken $13, crispy chicken $15, shrimp $16.</span></li>
 <li><span class="iname">Tossed Salad</span><span class="price">$9.50</span><span class="desc">Mixed lettuce, tomato, onions and black olives.</span></li>
 </ul></section>
-<section class="msec" id="m-more" role="tabpanel" aria-labelledby="tab-more" data-collapsed>
-<h3>Calzones, Bread and Sweets</h3>
+<section class="msec" id="m-more" aria-labelledby="h-more">
+<h3 id="h-more">Calzones, Bread and Sweets</h3>
 <ul class="items">
 <li><span class="iname">Cheese Calzone</span><span class="price">$12</span></li>
 <li><span class="iname">Pinwheels</span><span class="price">$15</span></li>
@@ -265,41 +330,54 @@
 <li><span class="iname">Dessert of the Day</span><span class="price">$6.50</span></li>
 <li><span class="iname">Soda</span><span class="price">$1.25</span></li>
 </ul></section>
+</div>
 <!--MENU-END-->
-      <div class="menu-cta"><a class="btn btn-primary" href="https://www.bellamaesmenu.com/" rel="noopener">Order this online</a></div>
+      </div>
+      <div class="menu-cta"><a class="btn btn-primary" href="https://www.bellamaesmenu.com/" rel="noopener">Order from this menu</a></div>
     </div>
   </section>
 
-  <section class="catering" id="catering" aria-labelledby="cat-h">
-    <div class="wrap cat-in">
+  <section class="band trays" id="trays" aria-labelledby="tr-h">
+    <div class="wrap trays-in">
       <div>
         <p class="eyebrow light">Parties, offices, game day</p>
-        <h2 id="cat-h">Half and full trays of Italian.</h2>
-        <p>Trays of Gram Galafaro's recipes, wings and pies by the stack. Call ahead with your headcount and we will put it together.</p>
+        <h2 id="tr-h">Feeding a crowd? Half and full trays.</h2>
+        <p>Gram's recipes and the rest of the menu, by the tray. Call with your date and headcount and we put it together.</p>
+        <p class="tray-note">Tray ideas <span class="confirm">confirm list and prices</span></p>
+        <ul class="tray-list" aria-label="Tray ideas">
+          <li>Chicken parm</li><li>Eggplant parm</li><li>Meatballs</li><li>Pasta</li><li>Wings</li><li>Pies by the stack</li>
+        </ul>
+        <a class="btn btn-light" href="tel:+15184519474">Call for trays: (518) 451-9474</a>
       </div>
-      <a class="btn btn-light" href="tel:+15184519474">Call to order trays</a>
+      <ol class="steps" aria-label="How trays work">
+        <li><b>1</b><span>Call with your date and how many people</span></li>
+        <li><b>2</b><span>Pick your trays, half or full</span></li>
+        <li><b>3</b><span>Pick up hot, or ask about delivery</span></li>
+      </ol>
     </div>
   </section>
 
-  <section class="reviews" aria-labelledby="rev-h">
+  <section class="band" aria-labelledby="rev-h">
     <div class="wrap rev-in">
+      <p class="eyebrow">Small family shop</p>
       <h2 id="rev-h">Ate here? Tell your neighbors.</h2>
-      <p>Reviews help a small family shop more than anything else.</p>
+      <p>A Google review helps a family shop more than anything else.</p>
       <div class="cta">
-        <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Bella+Mae%27s+Brick+Oven+150+Columbia+St+Rensselaer+NY" rel="noopener">Read and write Google reviews</a>
+        <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Bella+Mae%27s+Brick+Oven+150+Columbia+St+Rensselaer+NY" rel="noopener">Leave a Google review</a>
       </div>
     </div>
   </section>
 
-  <section class="visit" id="visit" aria-labelledby="visit-h">
+  <section class="band visit" id="visit" aria-labelledby="visit-h">
     <div class="wrap visit-in">
       <div>
-        <p class="eyebrow">Come by</p>
+        <p class="eyebrow">Find us</p>
         <h2 id="visit-h">150 Columbia St, Rensselaer</h2>
+        <p class="landmark">In the small plaza between U-Haul and Charlie's Hot Dogs. <span class="confirm">confirm</span></p>
         <p class="big-phone"><a href="tel:+15184519474">(518) 451-9474</a></p>
-        <p>Pickup and delivery. Pay by card.</p>
+        <p>Takeout and delivery. Order online, or call.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Bella+Mae%27s+Brick+Oven+150+Columbia+St+Rensselaer+NY" rel="noopener">Get directions</a>
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Bella+Mae%27s+Brick+Oven+150+Columbia+St+Rensselaer+NY" rel="noopener">Get directions</a>
           <a class="btn btn-ghost" href="https://www.facebook.com/BellaMaes2020/" rel="noopener">Facebook</a>
         </div>
       </div>
@@ -317,7 +395,7 @@
             <tr data-day="0"><th scope="row">Sunday</th><td>3 PM to 6 PM</td></tr>
           </tbody>
         </table>
-        <span class="demo">Hours from Google, confirm with owner</span>
+        <span class="confirm">Hours from Google, confirm with owner</span>
       </div>
     </div>
   </section>
@@ -337,15 +415,15 @@
     </ul>
   </div>
   <p class="wrap credit">&copy; <span id="yr">2026</span> Bella Mae's Brick Oven &middot; Designed by Kobrossi Systems</p>
-  <p class="wrap credit photo-credit">Stock photos: Wayne Truong, Breville USA, stef yau, CC BY 2.0 via Wikimedia Commons.</p>
+  <p class="wrap credit">Stock photo: stef yau, CC BY 2.0 via Wikimedia Commons.</p>
 </footer>
 
 <nav class="dock" aria-label="Quick actions">
   <a href="https://www.bellamaesmenu.com/" rel="noopener">Order</a>
   <a href="tel:+15184519474">Call</a>
-  <a href="https://www.google.com/maps/search/?api=1&query=Bella+Mae%27s+Brick+Oven+150+Columbia+St+Rensselaer+NY" rel="noopener">Directions</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Bella+Mae%27s+Brick+Oven+150+Columbia+St+Rensselaer+NY" rel="noopener">Directions</a>
 </nav>
 
-<script src="assets/site.js?v=1" defer></script>
+<script src="assets/site.js?v=3" defer></script>
 </body>
 </html>

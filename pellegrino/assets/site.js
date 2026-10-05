@@ -77,3 +77,29 @@ if(form){
     done.focus();
   });
 }
+
+// Menu tabs (v2). Without JS every section shows, stacked.
+(function(){
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  if(!tabs.length) return;
+  document.documentElement.classList.add("js");
+  const pick = (t, focus) => {
+    tabs.forEach(x => {
+      const on = x === t;
+      x.setAttribute("aria-selected", on);
+      x.tabIndex = on ? 0 : -1;
+      document.getElementById(x.getAttribute("aria-controls")).classList.toggle("on", on);
+    });
+    if(focus) t.focus();
+  };
+  tabs.forEach((t,i) => {
+    t.addEventListener("click", () => pick(t));
+    t.addEventListener("keydown", e => {
+      const k = {ArrowRight:1, ArrowLeft:-1}[e.key];
+      if(k){ e.preventDefault(); pick(tabs[(i+k+tabs.length)%tabs.length], true); }
+      if(e.key==="Home"){ e.preventDefault(); pick(tabs[0], true); }
+      if(e.key==="End"){ e.preventDefault(); pick(tabs[tabs.length-1], true); }
+    });
+  });
+  pick(tabs[0]);
+})();
