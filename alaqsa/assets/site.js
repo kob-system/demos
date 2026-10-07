@@ -152,7 +152,10 @@
     document.addEventListener("aq-lang", function () { if (data) { buildBar(); draw(); } });
     fetch(ROOT + "data/grocery.json").then(function (r) { return r.json(); }).then(function (j) {
       j.items.forEach(function (r) { r.push(norm(r[0] + " " + (r[2] || ""))); });
-      data = j; buildBar(); draw();
+      data = j;
+      var qs = new URLSearchParams(location.search).get("q");
+      if (qs) { q = qs; input.value = qs; }
+      buildBar(); draw();
     }).catch(function () { countEl.textContent = "The item list could not load. Please call the store."; });
   }
 })();
