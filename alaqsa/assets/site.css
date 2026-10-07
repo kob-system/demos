@@ -220,3 +220,8 @@ html[lang="ar"] .item .ar-name{display:none}
 .dairy-row figure{margin:0;scroll-snap-align:start}
 .dairy-row img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:12px;display:block}
 .dairy-row figcaption{font-size:14px;font-weight:700;margin-top:6px}
+@media (max-width:560px){
+  .brand .en{display:none}
+  .brand .mark{height:26px}
+  .brand{gap:8px}
+}
