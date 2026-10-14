@@ -67,4 +67,30 @@
     var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { threshold: .15 });
     ch.forEach(function (c) { io.observe(c); });
   }
+
+  // Walk-in: scroll scrubs the door-open video frames. Reduced motion keeps the still photo.
+  var wk = document.querySelector(".walkin");
+  if (wk && !still) {
+    var n = +wk.getAttribute("data-frames"), base = wk.getAttribute("data-path"), cv = wk.querySelector("canvas"), cx = cv.getContext("2d");
+    var imgs = [], cur = -1, started = false, txt = wk.querySelector(".walkin-text");
+    function src(i) { return base + ("00" + (i + 1)).slice(-3) + ".webp"; }
+    function draw() {
+      var r = wk.getBoundingClientRect(), span = wk.offsetHeight - window.innerHeight;
+      var p = Math.min(1, Math.max(0, -r.top / span)), i = Math.min(n - 1, Math.floor(p * n));
+      txt.style.opacity = p > .82 || p < .04 ? 1 : 0;
+      while (i > 0 && !(imgs[i] && imgs[i].naturalWidth)) i--;
+      var im = imgs[i]; if (!im || !im.naturalWidth || i === cur) return; cur = i;
+      var s = Math.max(cv.width / im.naturalWidth, cv.height / im.naturalHeight), w = im.naturalWidth * s, h = im.naturalHeight * s;
+      cx.drawImage(im, (cv.width - w) / 2, (cv.height - h) / 2, w, h);
+      if (!/ready/.test(wk.className)) wk.className += " ready";
+    }
+    function size() { var r = Math.min(window.devicePixelRatio || 1, 2); cv.width = cv.clientWidth * r; cv.height = cv.clientHeight * r; cur = -1; draw(); }
+    function load() {
+      if (started) return; started = true;
+      for (var i = 0; i < n; i++) { var im = new Image(); im.decoding = "async"; im.onload = draw; im.src = src(i); imgs[i] = im; }
+    }
+    new IntersectionObserver(function (es) { if (es[0].isIntersecting) load(); }, { rootMargin: "100% 0px" }).observe(wk);
+    window.addEventListener("scroll", function () { requestAnimationFrame(draw); }, { passive: true });
+    window.addEventListener("resize", size); size();
+  }
 })();
