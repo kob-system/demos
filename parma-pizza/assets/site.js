@@ -1,4 +1,4 @@
-/* Menu tabs, open/closed badge, today's hours. */
+/* Menu tabs, open/closed badge, today's hours, footage play/pause, story reveal. */
 (function () {
   "use strict";
   var tabs = [].slice.call(document.querySelectorAll('[role="tab"]'));
@@ -48,4 +48,23 @@
       badge.querySelector("span").textContent = txt;
     }
   } catch (e) { /* badge keeps the address text */ }
+
+  // Footage: plays only on screen, never when the visitor asked for reduced motion, always has Pause (WCAG 2.2.2).
+  var still = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  [].slice.call(document.querySelectorAll("video[data-auto]")).forEach(function (v) {
+    var b = v.parentNode.querySelector(".vbtn"), paused = still;
+    function set() { if (b) { b.textContent = paused ? "Play" : "Pause"; b.setAttribute("aria-pressed", paused ? "true" : "false"); b.setAttribute("aria-label", (paused ? "Play" : "Pause") + " video"); } }
+    if (b) b.addEventListener("click", function () { paused = !paused; paused ? v.pause() : v.play(); set(); });
+    set();
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting && !paused) v.play().catch(function () {}); else v.pause(); }); }, { threshold: .25 }).observe(v);
+    } else if (!paused) v.play().catch(function () {});
+  });
+  // Story chapters slide in once.
+  var ch = [].slice.call(document.querySelectorAll(".chapter"));
+  if (ch.length && "IntersectionObserver" in window && !still) {
+    document.documentElement.className += " js";
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { threshold: .15 });
+    ch.forEach(function (c) { io.observe(c); });
+  }
 })();
