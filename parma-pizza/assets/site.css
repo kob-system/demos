@@ -147,30 +147,6 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 .brand{white-space:nowrap}
 @media (max-width:420px){.bar .call{font-size:14px;padding:10px 12px}.brand{font-size:19px}.brand img{width:32px;height:29px}}
 
-/* animated pizza (Flori's pick, from the 10-07 demo) */
-#embers{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-#ovenGlow{position:absolute;right:-10%;top:10%;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,138,61,.55),rgba(255,138,61,0) 65%);opacity:0;pointer-events:none}
-.stage{position:relative;max-width:560px;width:100%;margin:0 auto}
-.peel{position:absolute;inset:6% 6% 2%;border-radius:50%;background:radial-gradient(circle at 50% 55%,rgba(0,0,0,.55),rgba(0,0,0,0) 70%);filter:blur(10px)}
-#pie{position:relative;width:100%;height:auto;overflow:visible}
-#pie .pop{transform-box:fill-box;transform-origin:center}
-#pieSlice{filter:drop-shadow(0 14px 14px rgba(0,0,0,.45))}
-#pie.live .steam path{animation:steam 4.2s ease-in-out infinite}
-#pie.live .steam path:nth-child(2){animation-delay:1.4s}
-#pie.live .steam path:nth-child(3){animation-delay:2.8s}
-#motionBtn{position:absolute;right:4px;bottom:4px;display:inline-flex;gap:8px;align-items:center;min-height:40px;padding:0 14px;border-radius:999px;background:rgba(0,0,0,.45);color:var(--on-dark);border:1px solid rgba(255,255,255,.2);font:600 14px var(--body);cursor:pointer}
-#motionBtn svg{width:14px;height:14px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
-.chips p{width:100%;text-align:center;margin:0 0 4px;font-size:14px;color:var(--on-dark-soft);font-weight:600}
-.chip{min-height:40px;padding:0 15px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:var(--on-dark);font:600 14px var(--body);cursor:pointer;display:inline-flex;align-items:center;gap:7px}
-.chip::before{content:"+";font-weight:800;color:var(--on-dark-soft)}
-.chip[aria-pressed="true"]{background:var(--on-dark);color:var(--char);border-color:var(--on-dark)}
-.chip[aria-pressed="true"]::before{content:"\2713";color:var(--tomato)}
-#pieSays{min-height:1.4em;text-align:center;font-size:14px;color:var(--gold);margin:10px 0 0;font-weight:600}
-@media (min-width:901px){.hero .chips{grid-column:2}}
-@keyframes ping{0%{box-shadow:0 0 0 0 rgba(76,217,100,.55)}70%{box-shadow:0 0 0 10px rgba(76,217,100,0)}100%{box-shadow:0 0 0 0 rgba(76,217,100,0)}}
-@keyframes steam{0%{opacity:0;transform:translateY(30px)}35%{opacity:.55}100%{opacity:0;transform:translateY(-90px)}}
-
 /* ---------- real build 10-14: footage slots, logo card, story, subpages ---------- */
 .hero-card{justify-self:center;background:#eef1ef;border-radius:28px;padding:28px;box-shadow:0 30px 60px rgba(0,0,0,.45);transform:rotate(-2deg);max-width:340px}
 .hero-card img{width:100%;height:auto}
@@ -221,3 +197,23 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 .walkin-text h2{color:#fff;margin:0 0 8px}
 .walkin-text p{margin:0;font-weight:600;font-size:18px}
 @media (prefers-reduced-motion:reduce){.walkin{height:auto}.walkin-stick{position:relative;height:70vh}.walkin canvas{display:none}.walkin.ready .walkin-still{display:block}}
+/* v3 10-14: real storefront hero from JP's video */
+.hero.with-video{min-height:auto;align-items:center;padding:56px 0 64px}
+.hero.with-video::after{display:none}
+.hero.with-video .wrap{grid-template-columns:1.1fr .9fr}
+.hero.with-video .hero-media{position:relative;inset:auto;grid-column:2;grid-row:1;border-radius:26px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.hero.with-video .hero-media img{object-position:50% 40%}
+@media (max-width:900px){
+ .hero.with-video{padding:0 0 40px}
+ .hero.with-video .wrap{grid-template-columns:1fr;padding:0}
+ .hero.with-video .wrap>div:not(.hero-media){padding:0 20px}
+ .hero.with-video .hero-media{grid-column:1;grid-row:1;border-radius:0;aspect-ratio:4/3;box-shadow:none}
+ .hero.with-video .hero-media img{object-position:50% 45%}
+}
+.visit-media{display:grid;gap:16px}
+.visit-media .front{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);border:1px solid #e3d3b8}
+/* desktop: keep the portrait walk-in sharp, framed in the middle */
+@media (min-width:700px){
+ .walkin{background:radial-gradient(70% 60% at 50% 50%,#3a1d10,#141110 70%)}
+ .walkin canvas,.walkin-still{left:50%;right:auto;width:min(92vw,calc(100vh * 9 / 16));transform:translateX(-50%);border-left:1px solid #2a2320;border-right:1px solid #2a2320}
+}
