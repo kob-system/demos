@@ -218,33 +218,45 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
  .walkin canvas,.walkin-still{left:50%;right:auto;width:min(92vw,calc(100vh * 9 / 16));transform:translateX(-50%);border-left:1px solid #2a2320;border-right:1px solid #2a2320}
 }
 
-/* ---------- v5 10-14: light red + white (JP: no dark/black vibe) ---------- */
+/* ---------- v6 10-14: bright pizza-shop look (refs: Your Pie, Papa Murphy's, Red Moon, Blaze) ---------- */
 :root{
-  --char:#ffffff; --char-2:#ffffff; --char-3:#f1d9d4;
-  --cream:#fdf3f0; --cream-2:#f8e3de; --paper:#ffffff;
-  --on-dark:#1d1715; --on-dark-soft:#5b4f49;
-  --ember:#c8261c; --tomato:#c8261c; --tomato-deep:#9c1b14;
+  --char:#ffffff; --char-2:#ffffff; --char-3:#efe6da;
+  --cream:#fbf7f0; --cream-2:#f6efe4; --paper:#ffffff;
+  --ink:#2f2826; --ink-soft:#6a5f5a; --on-dark:#2f2826; --on-dark-soft:#6a5f5a;
+  --ember:#d22730; --tomato:#d22730; --tomato-deep:#b81f27; --gold:#d22730;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
 }
-body{background:#fff}
-.bar{background:rgba(255,255,255,.94);border-bottom:3px solid var(--tomato);box-shadow:0 2px 14px rgba(160,30,20,.08)}
-.brand{color:var(--tomato-deep)}
-.bar nav a:hover{background:#fdecea;color:var(--tomato)}
-.hero{background:linear-gradient(180deg,#fff 0%,#fff 70%,#fdf3f0 100%);color:var(--ink)}
-.hero h1{color:var(--ink)}
-.status{background:#fff;border:1px solid #f1d9d4;color:var(--ink)}
+body{background:#fff;color:var(--ink)}
+h1,h2,h3,.brand{font-family:var(--display);font-weight:800;letter-spacing:0;text-transform:uppercase}
+.bar{background:#fff;border-bottom:1px solid #efe6da;box-shadow:none}
+.brand{color:var(--tomato)}
+.bar nav a{color:var(--ink)}
+.bar nav a:hover{background:var(--cream);color:var(--tomato)}
+.hero{background:#fff;color:var(--ink)}
+.hero h1{color:var(--ink);line-height:.95}
+.hero h1 em{font-style:normal;color:var(--tomato)}
+.hero .lede{color:var(--ink-soft)}
+.status{background:var(--cream);border:1px solid #efe6da;color:var(--ink)}
 .btn.ghost{background:#fff;color:var(--tomato);border:2px solid var(--tomato)}
-.facts{border-top:1px solid #f1d9d4}
-.facts b,.facts strong{color:var(--tomato)}
-.hero.with-video .hero-media{box-shadow:0 20px 44px rgba(160,30,20,.18);border:6px solid #fff;outline:2px solid #f1d9d4}
-.story{background:#fff}
-.chapter{box-shadow:0 10px 30px rgba(160,30,20,.07)}
-.ch-media{background:#fdf3f0}
-.why{background:var(--cream)}
-.card{box-shadow:0 8px 24px rgba(160,30,20,.06)}
-.pagehead{background:linear-gradient(180deg,#fff,#fdf3f0);border-bottom:1px solid #f1d9d4}
-footer{background:var(--tomato-deep);color:#fbe3df}
-footer h3,footer a{color:#fff}
-.credit{border-top:1px solid rgba(255,255,255,.25)}
+.facts{border-top:1px solid #efe6da}
+.facts b{color:var(--tomato)}
+.facts span{color:var(--ink-soft)}
+.hero.with-video .hero-media{box-shadow:0 18px 40px rgba(60,30,20,.12)}
+.order{background:var(--cream)!important;color:var(--ink)!important;border-top:1px solid #efe6da;border-bottom:1px solid #efe6da}
+.order p{color:var(--ink)!important}
+.order .btn{background:var(--tomato)!important;color:#fff!important}
+.story,.why{background:#fff}
+.story h2,.why h2,.chapter h3,.card h3{color:var(--ink)}
+.chapter,.card{background:#fff;border:1px solid #efe6da;box-shadow:0 8px 24px rgba(60,30,20,.05)}
+.ch-media{background:var(--cream)}
+.ch-num,.eyebrow{color:var(--tomato)}
+.pagehead{background:var(--cream);color:var(--ink);border-bottom:1px solid #efe6da}
+.visit{background:var(--cream)}
+footer{background:var(--cream);color:var(--ink-soft);border-top:4px solid var(--tomato)}
+footer h3{color:var(--ink)}
+footer a{color:var(--tomato)}
+.credit{border-top:1px solid #efe6da}
+.btn.dark{background:var(--ink);color:#fff}
 .dock .btn.dark{background:#fff;color:var(--tomato);border:2px solid var(--tomato)}
-.btn.dark{background:var(--tomato-deep);color:#fff}
-@media (max-width:900px){.hero.with-video .hero-media{border:0;outline:0;box-shadow:none}}
+@media (max-width:900px){.hero.with-video .hero-media{box-shadow:none}}
