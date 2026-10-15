@@ -260,3 +260,64 @@ footer a{color:var(--tomato)}
 .btn.dark{background:var(--ink);color:#fff}
 .dock .btn.dark{background:#fff;color:var(--tomato);border:2px solid var(--tomato)}
 @media (max-width:900px){.hero.with-video .hero-media{box-shadow:none}}
+
+/* ask parma helper */
+.dock-ask{display:none}
+.ask-cta{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;max-width:520px;margin:16px 0 4px;padding:14px 18px 14px 52px;position:relative;
+  background:#fff;border:2px solid var(--tomato);border-radius:14px;color:var(--ink);text-align:left;cursor:pointer;
+  font:800 22px/1.05 var(--display);text-transform:uppercase;box-shadow:0 8px 22px rgba(210,39,48,.10);transition:transform .15s,box-shadow .15s}
+.ask-cta::before{content:"";position:absolute;left:16px;top:50%;width:22px;height:22px;margin-top:-11px;
+  background:var(--tomato);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='11' cy='11' r='7' fill='none' stroke='black' stroke-width='2.6'/%3E%3Cpath d='M16.5 16.5L21 21' stroke='black' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='11' cy='11' r='7' fill='none' stroke='black' stroke-width='2.6'/%3E%3Cpath d='M16.5 16.5L21 21' stroke='black' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat}
+.ask-cta span{font:400 14px/1.3 var(--body);text-transform:none;color:var(--ink-soft)}
+.ask-cta:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(210,39,48,.16)}
+.ask-cta:focus-visible,.ask-fab:focus-visible,.ask-panel button:focus-visible,.ask-panel a:focus-visible,.ask-form input:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.ask-fab{position:fixed;right:20px;bottom:20px;z-index:65;display:flex;align-items:center;gap:8px;padding:13px 18px;border:0;border-radius:999px;
+  background:var(--tomato);color:#fff;font:700 16px/1 var(--body);box-shadow:0 10px 26px rgba(210,39,48,.32);cursor:pointer}
+.ask-fab[hidden]{display:none}
+.ask-panel{position:fixed;right:20px;bottom:20px;z-index:70;width:400px;max-width:calc(100vw - 32px);height:min(640px,calc(100vh - 40px));
+  display:flex;flex-direction:column;background:#fff;color:var(--ink);border:1px solid #efe6da;border-radius:18px;overflow:hidden;
+  box-shadow:0 20px 50px rgba(60,30,20,.22);font-family:var(--body)}
+.ask-panel[hidden]{display:none}
+.ask-top{display:flex;align-items:center;gap:10px;padding:14px 14px 12px 18px;background:#fff;border-bottom:3px solid var(--tomato)}
+.ask-top div{flex:1;min-width:0}
+.ask-top b{display:block;font:800 24px/1 var(--display);text-transform:uppercase;color:var(--tomato)}
+.ask-top span{font-size:13px;color:var(--ink-soft)}
+.ask-x{width:40px;height:40px;border:0;border-radius:10px;background:var(--cream);color:var(--ink);font-size:26px;line-height:1;cursor:pointer}
+.ask-log{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--cream)}
+.ask-m{max-width:92%;padding:11px 13px;border-radius:14px;font-size:15px;line-height:1.4}
+.ask-m.bot{align-self:flex-start;background:#fff;border:1px solid #efe6da;width:92%}
+.ask-m.me{align-self:flex-end;background:var(--tomato);color:#fff;font-weight:600}
+.ask-wait{color:var(--ink-soft);font-style:italic;width:auto!important}
+.ask-group{margin-top:10px}
+.ask-group h4{margin:0 0 4px;font:800 16px/1.1 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--tomato)}
+.ask-group ul{list-style:none;margin:0;padding:0;border-top:1px solid #efe6da}
+.ask-group li{padding:7px 0;border-bottom:1px solid #efe6da}
+.ask-row{display:flex;flex-wrap:wrap;column-gap:10px;align-items:baseline;justify-content:space-between}
+.ask-name{font-weight:700;min-width:0;overflow-wrap:anywhere}
+.ask-price{flex:0 0 auto;font-weight:700;color:var(--tomato);white-space:nowrap;font-size:14px}
+.ask-group small{display:block;color:var(--ink-soft);font-size:13px;line-height:1.35;margin-top:1px}
+.ask-total{display:flex;justify-content:space-between;align-items:baseline;padding:8px 10px;margin-top:6px;background:var(--cream);border-radius:8px;font-size:14px}
+.ask-total b{font:800 20px/1 var(--display);color:var(--ink)}
+.ask-note{margin:10px 0 0;font-size:13px;color:var(--ink-soft)}
+.ask-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.ask-acts a{flex:1 1 130px;white-space:nowrap;text-align:center;padding:11px 12px;border-radius:999px;font:700 14px/1 var(--body);text-decoration:none}
+.ask-order{background:var(--tomato);color:#fff}
+.ask-call{background:#fff;color:var(--tomato);border:2px solid var(--tomato)}
+.ask-chips{display:flex;gap:6px;overflow-x:auto;padding:10px 12px 4px;background:#fff;border-top:1px solid #efe6da;scrollbar-width:none}
+.ask-chips button{flex:0 0 auto;padding:8px 12px;border-radius:999px;border:1.5px solid #efe6da;background:var(--cream);color:var(--ink);font:600 13px/1 var(--body);cursor:pointer}
+.ask-chips button:hover{border-color:var(--tomato);color:var(--tomato)}
+.ask-form{display:flex;gap:8px;padding:8px 12px 6px;background:#fff}
+.ask-form input{flex:1;min-width:0;padding:12px 14px;border:2px solid #efe6da;border-radius:12px;font:16px var(--body);color:var(--ink);background:#fff}
+.ask-form input:focus{border-color:var(--tomato);outline:none}
+.ask-form button{padding:0 18px;border:0;border-radius:12px;background:var(--tomato);color:#fff;font:700 15px var(--body);cursor:pointer}
+.ask-foot{margin:0;padding:2px 14px 10px;background:#fff;font-size:11.5px;line-height:1.35;color:var(--ink-soft);text-align:center}
+@media (max-width:820px){
+  .ask-fab{display:none}
+  .dock-ask{flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:6px;padding:0 16px;border:2px solid var(--tomato);border-radius:999px;background:var(--cream);color:var(--tomato);font:700 16px/1 var(--body);cursor:pointer}
+  .ask-m.bot{width:100%;max-width:100%}
+  .ask-acts a{flex-basis:100%}
+  .ask-panel{left:0;right:0;bottom:0;width:auto;max-width:none;height:88vh;height:88dvh;border-radius:18px 18px 0 0;border-bottom:0}
+  html.ask-open .dock{display:none}
+}
+@media (prefers-reduced-motion:reduce){.ask-cta{transition:none}}

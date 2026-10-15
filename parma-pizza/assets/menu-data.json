@@ -1,0 +1,932 @@
+{
+ "source": "pizzaparma.net home page menu, fetched 2026-10-14 (copy: raw/pizzaparma-net-menu-text-2026-10-14.txt)",
+ "updated": "2026-10-14",
+ "shop": {
+  "name": "Parma Pizza",
+  "phone": "(518) 280-3288",
+  "address": "1525 US-9, Clifton Park, NY 12065",
+  "order_url": "https://online.skytab.com/3c3b4dd5e89944d0744a036f953f9799"
+ },
+ "toppings": [
+  "Pepperoni",
+  "Sausage",
+  "Ham",
+  "Onions",
+  "Mushrooms",
+  "Peppers",
+  "Olives",
+  "Meatballs",
+  "Broccoli",
+  "Hot Peppers",
+  "Extra Cheese",
+  "Pineapple",
+  "Salami",
+  "Spinach",
+  "Eggplant",
+  "Sweet Roasted Peppers",
+  "Chicken",
+  "Tomatoes",
+  "Ricotta",
+  "Hot Honey"
+ ],
+ "sizing": {
+  "note": "Slice counts and 'serves' lines are from the menu. Sicilian 24-cut and Round Thin 24-cut give 24 pieces each.",
+  "round_slices": {
+   "small": 6,
+   "medium": 8,
+   "xl": 8
+  },
+  "party_24cut_slices": 24,
+  "half_tray_serves": "6-8",
+  "wings_feeds": {
+   "10": "1-2",
+   "20": "3-4",
+   "30": "5-6"
+  }
+ },
+ "sections": [
+  {
+   "id": "pizza",
+   "name": "Round Pizza",
+   "items": [
+    {
+     "name": "Cheese Pizza, Small 14\"",
+     "price": 13.99,
+     "desc": "6 slices. +$2.00 per topping.",
+     "slices": 6,
+     "size": "small",
+     "topping_price": 2.0
+    },
+    {
+     "name": "Cheese Pizza, Medium 16\"",
+     "price": 15.99,
+     "desc": "8 slices. +$2.50 per topping.",
+     "slices": 8,
+     "size": "medium",
+     "topping_price": 2.5
+    },
+    {
+     "name": "Cheese Pizza, X-Large 18\"",
+     "price": 17.99,
+     "desc": "8 slices. +$3.00 per topping.",
+     "slices": 8,
+     "size": "xl",
+     "topping_price": 3.0
+    },
+    {
+     "name": "Gluten Free 12\"",
+     "price": 13.99,
+     "desc": "Cauliflower crust. +$2.00 per topping.",
+     "tags": [
+      "gluten-free crust"
+     ],
+     "topping_price": 2.0
+    },
+    {
+     "name": "Bianca (Garlic Butter Sauce)",
+     "price": {
+      "small": 13.99,
+      "medium": 15.99,
+      "xl": 17.99
+     },
+     "desc": "Garlic butter sauce instead of red. Same sizes and topping prices as round pizza.",
+     "tags": [
+      "white"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "party",
+   "name": "Sicilian & Party",
+   "items": [
+    {
+     "name": "Sicilian 8-Cut",
+     "price": 19.99,
+     "desc": "Square thick crust. +$3.00 per topping.",
+     "slices": 8,
+     "topping_price": 3.0
+    },
+    {
+     "name": "Sicilian 24-Cut",
+     "price": 34.99,
+     "desc": "24 pieces. +$6.00 per topping.",
+     "slices": 24,
+     "topping_price": 6.0
+    },
+    {
+     "name": "Round Thin 24-Cut",
+     "price": 30.99,
+     "desc": "24 pieces. +$6.00 per topping.",
+     "slices": 24,
+     "topping_price": 6.0
+    }
+   ]
+  },
+  {
+   "id": "gourmet",
+   "name": "Gourmet Pizzas",
+   "note": "Small 14\" $20 / Medium 16\" $23 / XL 18\" $25",
+   "items": [
+    {
+     "name": "Parma Pizza",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Soppressata salami, ricotta, hot honey"
+    },
+    {
+     "name": "Chicken Bang Bang",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Chicken, bacon, bang bang sauce"
+    },
+    {
+     "name": "Italian",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Roasted peppers, sausage, pepperoni, basil"
+    },
+    {
+     "name": "Chicken Parmesan",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Chicken, ricotta, marinara"
+    },
+    {
+     "name": "Buffalo Chicken",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Chicken, mild buffalo sauce"
+    },
+    {
+     "name": "BBQ Chicken",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Chicken, house BBQ sauce"
+    },
+    {
+     "name": "Chicken Alfredo",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Chicken, mushrooms, Alfredo"
+    },
+    {
+     "name": "Chicken Diabolo",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Chicken, roasted peppers, hot sauce"
+    },
+    {
+     "name": "Lasagna",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Meatballs, ricotta, marinara"
+    },
+    {
+     "name": "The Works",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Mushrooms, peppers, onions, sausage, pepperoni"
+    },
+    {
+     "name": "Meat Lovers",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Ham, pepperoni, bacon, sausage"
+    },
+    {
+     "name": "Roma Spinach",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Spinach, tomatoes, feta, garlic"
+    },
+    {
+     "name": "White Rio",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Bacon, tomatoes, ranch",
+     "tags": [
+      "white"
+     ]
+    },
+    {
+     "name": "Philly Cheese Steak",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Steak, mushrooms, peppers, onions"
+    },
+    {
+     "name": "NY White",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Broccoli, ricotta, garlic",
+     "tags": [
+      "white"
+     ]
+    },
+    {
+     "name": "Baked Ziti",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Ziti, ricotta, marinara"
+    },
+    {
+     "name": "Ziti Alfredo",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Ziti, Alfredo sauce"
+    },
+    {
+     "name": "Primavera",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Mushrooms, peppers, onions, broccoli, ranch"
+    },
+    {
+     "name": "Hawaiian",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Ham and pineapple"
+    },
+    {
+     "name": "Mediterranean",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Spinach, feta, garlic, olives"
+    },
+    {
+     "name": "Chicken Cordon Bleu",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Chicken, ham, mozzarella, Parmesan"
+    },
+    {
+     "name": "Margherita",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Sun-ripened tomatoes, mozzarella, garlic, basil"
+    },
+    {
+     "name": "Vegetarian",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Broccoli, tomatoes, mushrooms, onions, peppers"
+    },
+    {
+     "name": "Chicken Bacon Ranch",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Chicken, bacon, ranch"
+    },
+    {
+     "name": "Pesto",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Garlic butter, pesto, ricotta"
+    },
+    {
+     "name": "Chicken Broccoli Ranch",
+     "price": {
+      "small": 20,
+      "medium": 23,
+      "xl": 25
+     },
+     "desc": "Chicken, broccoli, ranch"
+    }
+   ]
+  },
+  {
+   "id": "apps",
+   "name": "Appetizers",
+   "items": [
+    {
+     "name": "French Fries",
+     "price": 6.99,
+     "desc": ""
+    },
+    {
+     "name": "Mozzarella Sticks (6)",
+     "price": 8.99,
+     "desc": "With raspberry sauce +$1.50"
+    },
+    {
+     "name": "Jalapeño Poppers with Cheddar (6)",
+     "price": 8.99,
+     "desc": ""
+    },
+    {
+     "name": "Chicken Tenders (5)",
+     "price": 9.99,
+     "desc": ""
+    },
+    {
+     "name": "Fried Mushrooms",
+     "price": 8.99,
+     "desc": ""
+    },
+    {
+     "name": "Mac and Cheese Bites (10)",
+     "price": 8.99,
+     "desc": ""
+    },
+    {
+     "name": "Rice Balls stuffed with Cheese (6)",
+     "price": 8.99,
+     "desc": ""
+    },
+    {
+     "name": "Broccoli Cheddar Bites (10)",
+     "price": 8.99,
+     "desc": ""
+    },
+    {
+     "name": "Chicken Nuggets (10)",
+     "price": 5.99,
+     "desc": ""
+    },
+    {
+     "name": "Garlic Knots (4)",
+     "price": 2.99,
+     "desc": ""
+    },
+    {
+     "name": "Garlic Bread",
+     "price": 4.49,
+     "desc": "Add cheese +$2.00"
+    },
+    {
+     "name": "Meatballs (2)",
+     "price": 6.49,
+     "desc": ""
+    }
+   ]
+  },
+  {
+   "id": "rolls",
+   "name": "Stuffed Rolls & Calzones",
+   "note": "Toppings +$1.50 each",
+   "items": [
+    {
+     "name": "Cheese Calzone",
+     "price": 9.99,
+     "desc": ""
+    },
+    {
+     "name": "Stromboli Roll",
+     "price": 11.99,
+     "desc": "Ham, pepperoni, peppers"
+    },
+    {
+     "name": "Chicken Roll",
+     "price": 10.99,
+     "desc": ""
+    },
+    {
+     "name": "Sausage Roll",
+     "price": 10.99,
+     "desc": ""
+    },
+    {
+     "name": "Pepperoni Roll",
+     "price": 10.99,
+     "desc": ""
+    },
+    {
+     "name": "Buffalo Roll",
+     "price": 10.99,
+     "desc": ""
+    },
+    {
+     "name": "Spinach Roll",
+     "price": 10.99,
+     "desc": ""
+    },
+    {
+     "name": "Veggie Roll",
+     "price": 11.99,
+     "desc": "Broccoli, tomatoes, mushrooms, onions, green peppers"
+    }
+   ]
+  },
+  {
+   "id": "wings",
+   "name": "Wings",
+   "note": "Fresh jumbo wings or boneless, all served with bleu cheese. Sauces: Buffalo, Garlic Parmesan, Honey BBQ, Mild, Medium, Hot, BBQ, Teriyaki, Mango Habanero. Bleu cheese or ranch +$1.00. Prices subject to market change.",
+   "sauces": [
+    "Buffalo",
+    "Garlic Parmesan",
+    "Honey BBQ",
+    "Mild",
+    "Medium",
+    "Hot",
+    "BBQ",
+    "Teriyaki",
+    "Mango Habanero"
+   ],
+   "items": [
+    {
+     "name": "Wings, 10 pc",
+     "price": 15.0,
+     "desc": "Jumbo or boneless. Perfect for 1-2",
+     "pieces": 10
+    },
+    {
+     "name": "Wings, 20 pc",
+     "price": 28.0,
+     "desc": "Jumbo or boneless. Perfect for 3-4",
+     "pieces": 20
+    },
+    {
+     "name": "Wings, 30 pc",
+     "price": 40.0,
+     "desc": "Jumbo or boneless. Perfect for 5-6",
+     "pieces": 30
+    }
+   ]
+  },
+  {
+   "id": "salads",
+   "name": "Salads",
+   "note": "Small / Large. Dressings: Homemade Balsamic Vinaigrette, Bleu Cheese, Ranch, Honey Mustard, Thousand Island, Golden Italian, Caesar. Extra dressing +$1.00",
+   "items": [
+    {
+     "name": "Tossed Salad",
+     "price": {
+      "small": 8.5,
+      "large": 10.5
+     },
+     "desc": "Lettuce, tomatoes, cucumbers, onions, green peppers, banana peppers, roasted peppers, olives"
+    },
+    {
+     "name": "Chef's Salad",
+     "price": {
+      "small": 11.75,
+      "large": 13.75
+     },
+     "desc": "Lettuce, tomatoes, cucumbers, onions, green peppers, roasted peppers, olives, ham, turkey, American cheese"
+    },
+    {
+     "name": "Antipasto Salad",
+     "price": {
+      "small": 11.75,
+      "large": 13.75
+     },
+     "desc": "Lettuce, tomatoes, cucumbers, onions, green peppers, banana peppers, olives, ham, pepperoni, salami, provolone cheese"
+    },
+    {
+     "name": "Grilled Chicken Salad",
+     "price": {
+      "small": 11.75,
+      "large": 13.75
+     },
+     "desc": "Grilled chicken, lettuce, tomatoes, cucumbers, onions, green peppers, banana peppers, roasted peppers, olives"
+    },
+    {
+     "name": "Buffalo Chicken Salad",
+     "price": {
+      "small": 11.75,
+      "large": 13.75
+     },
+     "desc": "Buffalo chicken, lettuce, tomatoes, cucumbers, onions, green peppers, banana peppers, roasted peppers, olives"
+    },
+    {
+     "name": "Crispy Chicken Salad",
+     "price": {
+      "small": 11.75,
+      "large": 13.75
+     },
+     "desc": "Crispy breaded chicken, lettuce, tomatoes, cucumbers, onions, green peppers, banana peppers, roasted peppers, olives"
+    },
+    {
+     "name": "Greek Salad",
+     "price": {
+      "small": 11.75,
+      "large": 13.75
+     },
+     "desc": "Lettuce, tomatoes, cucumbers, onions, green peppers, banana peppers, roasted peppers, olives, feta cheese"
+    }
+   ]
+  },
+  {
+   "id": "hotsubs",
+   "name": "Hot Subs",
+   "note": "Baked with mozzarella. Extra cheese +$2, meat +$5",
+   "items": [
+    {
+     "name": "Hot Meatball Parmigiana Sub",
+     "price": 12.5,
+     "desc": ""
+    },
+    {
+     "name": "Eggplant Parmigiana Sub",
+     "price": 12.5,
+     "desc": ""
+    },
+    {
+     "name": "Chicken Parmigiana Sub",
+     "price": 12.5,
+     "desc": ""
+    },
+    {
+     "name": "Philly Cheese Steak Sub",
+     "price": 14.5,
+     "desc": "Mushrooms, peppers, onions"
+    },
+    {
+     "name": "Philly Chicken Cheese Sub",
+     "price": 14.5,
+     "desc": "Mushrooms, peppers, onions"
+    },
+    {
+     "name": "Sausage Peppers & Onions Sub",
+     "price": 14.5,
+     "desc": ""
+    }
+   ]
+  },
+  {
+   "id": "coldsubs",
+   "name": "Cold Subs",
+   "note": "Extra cheese +$2, meat +$5",
+   "items": [
+    {
+     "name": "Parma Sub",
+     "price": 14.5,
+     "desc": "Prosciutto di Parma, soppressata, salami, pepperoni, provolone, oil & balsamic"
+    },
+    {
+     "name": "American Mix Sub",
+     "price": 12.5,
+     "desc": "Ham, turkey, American cheese, mayo"
+    },
+    {
+     "name": "Italian Mix Sub",
+     "price": 12.5,
+     "desc": "Ham, salami, pepperoni, provolone, oil & vinegar"
+    },
+    {
+     "name": "Ham and Cheese Sub",
+     "price": 12.5,
+     "desc": ""
+    },
+    {
+     "name": "Turkey Breast with Cheese Sub",
+     "price": 12.5,
+     "desc": ""
+    },
+    {
+     "name": "Chicken Tenders Sub",
+     "price": 12.5,
+     "desc": ""
+    },
+    {
+     "name": "Tuna Sub",
+     "price": 12.5,
+     "desc": ""
+    },
+    {
+     "name": "Grilled Chicken Sub",
+     "price": 14.5,
+     "desc": ""
+    },
+    {
+     "name": "Veggie Sub",
+     "price": 14.5,
+     "desc": "Lettuce, tomato, cucumbers, onions, peppers, olives, eggplant, provolone"
+    }
+   ]
+  },
+  {
+   "id": "dinners",
+   "name": "Italian Dinners",
+   "note": "Includes spaghetti or ziti and bread",
+   "items": [
+    {
+     "name": "Marinara Dinner",
+     "price": 11.99,
+     "desc": ""
+    },
+    {
+     "name": "Baked Ziti Dinner",
+     "price": 13.49,
+     "desc": ""
+    },
+    {
+     "name": "Manicotti Dinner",
+     "price": 15.49,
+     "desc": ""
+    },
+    {
+     "name": "Ravioli Dinner",
+     "price": 15.49,
+     "desc": ""
+    },
+    {
+     "name": "Spinach Ravioli Dinner",
+     "price": 15.49,
+     "desc": ""
+    },
+    {
+     "name": "Lasagna Dinner",
+     "price": 15.49,
+     "desc": ""
+    },
+    {
+     "name": "Stuffed Shells Dinner",
+     "price": 15.49,
+     "desc": ""
+    },
+    {
+     "name": "Chicken Parmigiana Dinner",
+     "price": 15.49,
+     "desc": ""
+    },
+    {
+     "name": "Meatball Parmigiana Dinner",
+     "price": 15.49,
+     "desc": ""
+    },
+    {
+     "name": "Eggplant Parmigiana Dinner",
+     "price": 15.49,
+     "desc": ""
+    },
+    {
+     "name": "Penne Vodka Dinner",
+     "price": 15.99,
+     "desc": "With chicken +$2.00"
+    },
+    {
+     "name": "Alfredo Sauce Dinner",
+     "price": 15.99,
+     "desc": "With chicken $17.99. With chicken & broccoli $18.99"
+    }
+   ]
+  },
+  {
+   "id": "trays",
+   "name": "Catering: Half-Size Dinner Trays",
+   "note": "Half-size trays serve 6-8 people. Call 518-280-3288 to arrange catering.",
+   "items": [
+    {
+     "name": "Baked Ziti Half Tray",
+     "price": 40.0,
+     "desc": "Serves 6-8",
+     "serves": 7
+    },
+    {
+     "name": "Chicken Alfredo Half Tray",
+     "price": 48.0,
+     "desc": "Serves 6-8",
+     "serves": 7
+    },
+    {
+     "name": "Chicken Parmigiana Half Tray",
+     "price": 48.0,
+     "desc": "Serves 6-8",
+     "serves": 7
+    },
+    {
+     "name": "Meatball Parmigiana Half Tray",
+     "price": 48.0,
+     "desc": "Serves 6-8",
+     "serves": 7
+    },
+    {
+     "name": "Manicotti Half Tray",
+     "price": 48.0,
+     "desc": "Serves 6-8",
+     "serves": 7
+    },
+    {
+     "name": "Stuffed Shells Half Tray",
+     "price": 48.0,
+     "desc": "Serves 6-8",
+     "serves": 7
+    },
+    {
+     "name": "Ravioli Half Tray",
+     "price": 48.0,
+     "desc": "Serves 6-8",
+     "serves": 7
+    },
+    {
+     "name": "Penne Vodka with Chicken Half Tray",
+     "price": 48.0,
+     "desc": "Serves 6-8",
+     "serves": 7
+    },
+    {
+     "name": "Lasagna Half Tray",
+     "price": 48.0,
+     "desc": "Serves 6-8",
+     "serves": 7
+    }
+   ]
+  },
+  {
+   "id": "salad_trays",
+   "name": "Catering: Salad Trays",
+   "items": [
+    {
+     "name": "Tossed Salad Tray",
+     "price": 28.0,
+     "desc": ""
+    },
+    {
+     "name": "Grilled Chicken Salad Tray",
+     "price": 39.0,
+     "desc": ""
+    },
+    {
+     "name": "Crispy Chicken Salad Tray",
+     "price": 39.0,
+     "desc": ""
+    },
+    {
+     "name": "Antipasto Salad Tray",
+     "price": 39.0,
+     "desc": ""
+    },
+    {
+     "name": "Chef's Salad Tray",
+     "price": 39.0,
+     "desc": ""
+    }
+   ]
+  },
+  {
+   "id": "drinks",
+   "name": "Beverages",
+   "items": [
+    {
+     "name": "2 Liter Soda",
+     "price": 3.99,
+     "desc": "Coca-Cola products"
+    },
+    {
+     "name": "20 oz Bottle Soda",
+     "price": 2.99,
+     "desc": "Coca-Cola products"
+    },
+    {
+     "name": "20 oz Bottle Water",
+     "price": 1.5,
+     "desc": ""
+    }
+   ]
+  },
+  {
+   "id": "desserts",
+   "name": "Desserts",
+   "items": [
+    {
+     "name": "Chocolate Cannoli (2)",
+     "price": 6.5,
+     "desc": ""
+    },
+    {
+     "name": "Cheesecake",
+     "price": 6.5,
+     "desc": ""
+    },
+    {
+     "name": "Chocolate Cake",
+     "price": 6.5,
+     "desc": ""
+    },
+    {
+     "name": "Tiramisu",
+     "price": 6.5,
+     "desc": ""
+    }
+   ]
+  },
+  {
+   "id": "specials",
+   "name": "Specials",
+   "items": [
+    {
+     "name": "The Double Play",
+     "price": 59.99,
+     "desc": "Two X-Large pizzas, 20 wings or boneless wings, 2 liter soda. Toppings extra.",
+     "xl": 2,
+     "wings": 20
+    },
+    {
+     "name": "Family Special #1",
+     "price": 42.99,
+     "desc": "X-Large cheese pizza, 20 wings or boneless wings, 2 liter soda.",
+     "xl": 1,
+     "wings": 20
+    },
+    {
+     "name": "Family Special #2",
+     "price": 29.99,
+     "desc": "Medium cheese pizza, 10 wings or boneless wings, 2 liter soda.",
+     "medium": 1,
+     "wings": 10
+    },
+    {
+     "name": "Triple Play",
+     "price": 84.99,
+     "desc": "Three X-Large pizzas, 30 wings or boneless wings.",
+     "xl": 3,
+     "wings": 30
+    },
+    {
+     "name": "Party Pack",
+     "price": 45.99,
+     "desc": "Three X-Large pizzas. Toppings extra.",
+     "xl": 3
+    },
+    {
+     "name": "Route 9 Special",
+     "price": 29.99,
+     "desc": "Two X-Large pizzas. Toppings extra.",
+     "xl": 2
+    },
+    {
+     "name": "Free 2 Liter Soda Tuesdays & Wednesdays",
+     "price": 0,
+     "desc": "With any X-Large pizza. Pickup only."
+    }
+   ]
+  }
+ ]
+}
